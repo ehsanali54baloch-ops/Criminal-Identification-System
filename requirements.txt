@@ -1,0 +1,30 @@
+# ==============================================================================
+# AI-Based Face Detection & Criminal Identification System
+# Project Dependencies (GitHub Codespaces & VS Code Ready)
+# Team: Ehsan Ali (Leader), Asif Ali, Sabir Ali
+# ==============================================================================
+
+# Web UI (pinned to v5: gr.Image streaming API used in app.py)
+gradio>=5.0,<6.0
+
+# Headless OpenCV (prevents libGL.so.1 errors in Codespaces)
+opencv-python-headless>=4.8.0.76
+
+# Face recognition engine
+deepface>=0.0.93
+tensorflow>=2.16.0
+# REQUIRED with TensorFlow 2.16+. Without it DeepFace fails to load and
+# recognition silently stops working.
+tf-keras
+
+# Data handling
+numpy>=1.26.0
+pandas>=2.0.0
+Pillow>=10.0.0
+
+# Utilities
+colorama>=0.4.6
+tqdm>=4.66.0
+
+# Loads email settings from a .env file
+python-dotenv>=1.0.0
